@@ -3,6 +3,8 @@ import FengniaoKit
 import CommandLineKit
 import Rainbow
 
+let appVersion = "0.4.1"
+
 let cli = CommandLineKit.CommandLine()
 
 let projectPathOption = StringOption(
@@ -32,9 +34,14 @@ let fileExtOption = MultiStringOption(
                  "Default is 'm mm swift xib storyboard'")
 cli.addOption(fileExtOption)
 
-let helpOption = BoolOption(shortFlag: "h", longFlag: "help",
+let helpOption = BoolOption(shortFlag: "h",
+                            longFlag: "help",
                             helpMessage: "Print this help message.")
 cli.addOption(helpOption)
+
+let versionOption = BoolOption(longFlag: "version",
+                               helpMessage: "Print version.")
+cli.addOption(versionOption)
 
 cli.formatOutput = {s, type in
     var str : String
@@ -60,12 +67,55 @@ do {
 
 if helpOption.value {
     cli.printUsage()
+    exit(EX_OK)
+}
+
+if versionOption.value {
+    print(appVersion)
+    exit(EX_OK)
+}
+
+
+let project = projectPathOption.value ?? "."
+let resourceExt = resourceExtOption.value ?? ["imageset", "jpg", "png", "gif"]
+let fileExt = fileExtOption.value ?? ["m", "mm", "swift", "xib", "storyboard", "plist"]
+
+let excloudePaths = excludePathOption.value ?? []
+
+let fengniao = Fengniao(projectPath: project,
+                        excludedPaths: excloudePaths,
+                        resourcsExt: resourceExt,
+                        fileExtensions: fileExt)
+
+let unusedFiles: [FileInfo]
+do {
+    try unusedFiles = fengniao.unusedFiles()
+}catch{
+    guard let e = error as? FengNiaoError else {
+        print("Unknow Error:\(error)")
+        exit(EX_USAGE)
+    }
+    switch e {
+    case .noResourceExtension:
+        print("You need to specify some resource extensions as search target. Use --resource-extensions to specify.".red.bold)
+    case .noFileExtension:
+        print("You need to specify some file extensions to search in. Use --file-extensions to specify.".red.bold)
+    }
     exit(EX_USAGE)
 }
 
-let project = projectPathOption.value ?? "."
-let resourceExt = resourceExtOption.value ?? ["png", "jpg", "imageset"]
-let fileExt = fileExtOption.value ?? ["m", "mm", "xib", "stroyboard"]
+if unusedFiles.isEmpty {
+    print("🤗")
+    exit(EX_OK)
+}
 
 
-print(CommandLine.arguments);
+
+
+
+
+
+
+
+
+

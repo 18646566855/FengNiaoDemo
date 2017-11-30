@@ -64,63 +64,63 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3343B3691FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D671FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Rainbow::Rainbow";
 			remoteInfo = Rainbow;
 		};
-		3343B36A1FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D681FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "CommandLine::CommandLineKit";
 			remoteInfo = CommandLineKit;
 		};
-		3343B36B1FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D691FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Fengniao::FengniaoKit";
 			remoteInfo = FengniaoKit;
 		};
-		3343B36C1FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D6A1FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PathKit::PathKit";
 			remoteInfo = PathKit;
 		};
-		3343B36D1FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D6B1FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		3343B36E1FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D6C1FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		3343B36F1FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D6D1FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PathKit::PathKit";
 			remoteInfo = PathKit;
 		};
-		3343B3701FCF1CBA00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D6E1FD001A200BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		3343B3711FCF1CBB00966CD6 /* PBXContainerItemProxy */ = {
+		ABD53D6F1FD001A400BFBCAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -136,9 +136,9 @@
 		OBJ_10 /* Fengniao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fengniao.swift; sourceTree = "<group>"; };
 		OBJ_11 /* StringSearchRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSearchRule.swift; sourceTree = "<group>"; };
 		OBJ_13 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/Test/Fengniao/.build/checkouts/PathKit--9185519632264250829/Package.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/PathKit--9185519632264250829/Package.swift"; sourceTree = "<group>"; };
 		OBJ_18 /* PathKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
-		OBJ_20 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/Test/Fengniao/.build/checkouts/Spectre.git--7655155069707042687/Package.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/Spectre.git--7655155069707042687/Package.swift"; sourceTree = "<group>"; };
 		OBJ_21 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
 		OBJ_22 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		OBJ_23 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		OBJ_26 /* GlobalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContext.swift; sourceTree = "<group>"; };
 		OBJ_27 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
 		OBJ_28 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/Test/Fengniao/.build/checkouts/Rainbow-4833422609927903952/Package.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/Rainbow-4833422609927903952/Package.swift"; sourceTree = "<group>"; };
 		OBJ_31 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		OBJ_32 /* CodesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesParser.swift; sourceTree = "<group>"; };
 		OBJ_33 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		OBJ_44 /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
 		OBJ_45 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		OBJ_46 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/Test/Fengniao/.build/checkouts/CommandLine-2650396103741080200/Package.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/CommandLine-2650396103741080200/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		"PathKit::PathKit::Product" /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -692,47 +692,47 @@
 		OBJ_101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Fengniao::FengniaoKit" /* FengniaoKit */;
-			targetProxy = 3343B36B1FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D691FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_103 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PathKit::PathKit" /* PathKit */;
-			targetProxy = 3343B36F1FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D6D1FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_105 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 3343B3701FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D6E1FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_141 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PathKit::PathKit" /* PathKit */;
-			targetProxy = 3343B36C1FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D6A1FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_142 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 3343B36E1FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D6C1FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_150 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 3343B36D1FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D6B1FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_168 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "CommandLine::CommandLineKit" /* CommandLineKit */;
-			targetProxy = 3343B3711FCF1CBB00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D6F1FD001A400BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Rainbow::Rainbow" /* Rainbow */;
-			targetProxy = 3343B3691FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D671FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 		OBJ_99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "CommandLine::CommandLineKit" /* CommandLineKit */;
-			targetProxy = 3343B36A1FCF1CBA00966CD6 /* PBXContainerItemProxy */;
+			targetProxy = ABD53D681FD001A200BFBCAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

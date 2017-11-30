@@ -1,8 +1,22 @@
 import Foundation
 import PathKit
 
+public enum FengNiaoError: Error {
+    case noResourceExtension
+    case noFileExtension
+}
+
 public struct FileInfo {
-    let Path: String
+    public let path: Path
+    public let size: Int
+    public let fileName: String
+    
+    init(path: String) {
+        self.path = Path(path)
+        self.size = self.path.size
+        self.fileName = self.path.lastComponent
+    }
+    
 }
 
 
@@ -20,8 +34,15 @@ public struct Fengniao {
         self.fileExtensions = fileExtensions
     }
     
-    public func unusedResource() -> [FileInfo] {
-        fatalError()
+    public func unusedFiles() throws-> [FileInfo] {
+        guard !resourcsExt.isEmpty else {
+            throw FengNiaoError.noResourceExtension
+        }
+        
+//        let allResources = allResources
+        
+        
+        fatalError("错误信息")
     }
     
     func stringsInUse() -> [String] {
@@ -33,8 +54,23 @@ public struct Fengniao {
         fatalError()
     }
     
-    public func delete() -> () {
-        
+    
+    public func delete(_ unusedFiles: [FileInfo]) -> (deleted: [FileInfo], failed: [(FileInfo, Error)]) {
+        var deleted = [FileInfo]()
+        var failed = [(FileInfo, Error)]()
+        for file in unusedFiles {
+            do {
+                try file.path.delete()
+                deleted.append(file)
+            }catch {
+                failed.append((file, error))
+            }
+        }
+        return (deleted, failed)
     }
     
+    public func allResourcsFiles() -> [String: Set<String>] {
+        
+        fatalError()
+    }
 }
