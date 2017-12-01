@@ -11,13 +11,16 @@ let package = Package(
         .package(url: "https://github.com/onevcat/Rainbow",
                  from: "3.0.0"),
         .package(url: "https://github.com/kylef/PathKit",
+                 from: "0.8.0"),
+        .package(url: "https://github.com/kylef/Spectre.git",
                  from: "0.8.0")
     ],
     targets: [
-        .target(name: "FengniaoKit", dependencies: ["PathKit"]),
-        .target(name: "Fengniao", dependencies: [ "CommandLine",
-                                                  "FengniaoKit",
-                                                  "Rainbow",
-                                                  "PathKit"])
+        .target(name: "FengniaoKit"),
+        .target(name: "Fengniao",
+                dependencies: ["FengniaoKit"]),
+        .testTarget(name: "FengNiaoKitTests")
+        
     ]
+    
 )
