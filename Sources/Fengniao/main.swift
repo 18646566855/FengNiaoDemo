@@ -85,7 +85,7 @@ let excloudePaths = excludePathOption.value ?? []
 let fengniao = Fengniao(projectPath: project,
                         excludedPaths: excloudePaths,
                         resourcsExt: resourceExt,
-                        fileExtensions: fileExt)
+                        searchInFileExtensions: fileExt)
 
 let unusedFiles: [FileInfo]
 do {

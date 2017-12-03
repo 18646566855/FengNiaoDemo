@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
 		"CommandLine::CommandLine::ProductTarget" /* CommandLine */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_176 /* Build configuration list for PBXAggregateTarget "CommandLine" */;
+			buildConfigurationList = OBJ_192 /* Build configuration list for PBXAggregateTarget "CommandLine" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_179 /* PBXTargetDependency */,
+				OBJ_195 /* PBXTargetDependency */,
 			);
 			name = CommandLine;
 			productName = CommandLine;
 		};
 		"Fengniao::FengniaoPackageTests::ProductTarget" /* FengniaoPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_171 /* Build configuration list for PBXAggregateTarget "FengniaoPackageTests" */;
+			buildConfigurationList = OBJ_187 /* Build configuration list for PBXAggregateTarget "FengniaoPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_174 /* PBXTargetDependency */,
+				OBJ_190 /* PBXTargetDependency */,
 			);
 			name = FengniaoPackageTests;
 			productName = FengniaoPackageTests;
@@ -32,98 +32,155 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_114 /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* PathKit.swift */; };
-		OBJ_116 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
-		OBJ_122 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Case.swift */; };
-		OBJ_123 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Context.swift */; };
-		OBJ_124 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Expectation.swift */; };
-		OBJ_125 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Failure.swift */; };
-		OBJ_126 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Global.swift */; };
-		OBJ_127 /* GlobalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* GlobalContext.swift */; };
-		OBJ_128 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Reporter.swift */; };
-		OBJ_129 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Reporters.swift */; };
-		OBJ_135 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* BackgroundColor.swift */; };
-		OBJ_136 /* CodesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* CodesParser.swift */; };
-		OBJ_137 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Color.swift */; };
-		OBJ_138 /* ControlCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ControlCode.swift */; };
-		OBJ_139 /* ModesExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ModesExtractor.swift */; };
-		OBJ_140 /* OutputTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* OutputTarget.swift */; };
-		OBJ_141 /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Rainbow.swift */; };
-		OBJ_142 /* String+Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* String+Rainbow.swift */; };
-		OBJ_143 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* StringGenerator.swift */; };
-		OBJ_144 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Style.swift */; };
-		OBJ_145 /* XcodeColorsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* XcodeColorsSupport.swift */; };
-		OBJ_151 /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* CommandLine.swift */; };
-		OBJ_152 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Option.swift */; };
-		OBJ_153 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* StringExtensions.swift */; };
-		OBJ_160 /* FengNiaoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FengNiaoKitTests.swift */; };
-		OBJ_166 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
-		OBJ_167 /* Fengniao.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Fengniao.swift */; };
-		OBJ_168 /* StringSearchRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* StringSearchRule.swift */; };
-		OBJ_63 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_69 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Package.swift */; };
-		OBJ_75 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Package.swift */; };
-		OBJ_81 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Package.swift */; };
-		OBJ_87 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Package.swift */; };
-		OBJ_93 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* main.swift */; };
-		OBJ_95 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
-		OBJ_96 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_100 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_116 /* FengNiaoKitSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FengNiaoKitSpec.swift */; };
+		OBJ_117 /* FengNiaoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FengNiaoKitTests.swift */; };
+		OBJ_119 /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CommandLine::CommandLineKit::Product" /* CommandLineKit.framework */; };
+		OBJ_120 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Rainbow::Rainbow::Product" /* Rainbow.framework */; };
+		OBJ_121 /* FengniaoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fengniao::FengniaoKit::Product" /* FengniaoKit.framework */; };
+		OBJ_122 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
+		OBJ_123 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_133 /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* CommandLine.swift */; };
+		OBJ_134 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Option.swift */; };
+		OBJ_135 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* StringExtensions.swift */; };
+		OBJ_141 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* BackgroundColor.swift */; };
+		OBJ_142 /* CodesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* CodesParser.swift */; };
+		OBJ_143 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Color.swift */; };
+		OBJ_144 /* ControlCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ControlCode.swift */; };
+		OBJ_145 /* ModesExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ModesExtractor.swift */; };
+		OBJ_146 /* OutputTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* OutputTarget.swift */; };
+		OBJ_147 /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Rainbow.swift */; };
+		OBJ_148 /* String+Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* String+Rainbow.swift */; };
+		OBJ_149 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* StringGenerator.swift */; };
+		OBJ_150 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Style.swift */; };
+		OBJ_151 /* XcodeColorsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* XcodeColorsSupport.swift */; };
+		OBJ_157 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Extensions.swift */; };
+		OBJ_158 /* Fengniao.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Fengniao.swift */; };
+		OBJ_159 /* StringSearchRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* StringSearchRule.swift */; };
+		OBJ_161 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
+		OBJ_162 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_169 /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* PathKit.swift */; };
+		OBJ_171 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_177 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Case.swift */; };
+		OBJ_178 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Context.swift */; };
+		OBJ_179 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Expectation.swift */; };
+		OBJ_180 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Failure.swift */; };
+		OBJ_181 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Global.swift */; };
+		OBJ_182 /* GlobalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* GlobalContext.swift */; };
+		OBJ_183 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Reporter.swift */; };
+		OBJ_184 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Reporters.swift */; };
+		OBJ_64 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_70 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Package.swift */; };
+		OBJ_76 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Package.swift */; };
+		OBJ_82 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Package.swift */; };
+		OBJ_88 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Package.swift */; };
+		OBJ_94 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* main.swift */; };
+		OBJ_96 /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CommandLine::CommandLineKit::Product" /* CommandLineKit.framework */; };
 		OBJ_97 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Rainbow::Rainbow::Product" /* Rainbow.framework */; };
-		OBJ_98 /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CommandLine::CommandLineKit::Product" /* CommandLineKit.framework */; };
-		OBJ_99 /* FengniaoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fengniao::FengniaoKit::Product" /* FengniaoKit.framework */; };
+		OBJ_98 /* FengniaoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fengniao::FengniaoKit::Product" /* FengniaoKit.framework */; };
+		OBJ_99 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ABEF66EE1FD1507300C3BC59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "PathKit::PathKit";
-			remoteInfo = PathKit;
-		};
-		ABEF66EF1FD1507300C3BC59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Spectre::Spectre";
-			remoteInfo = Spectre;
-		};
-		ABEF66F01FD1507300C3BC59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Spectre::Spectre";
-			remoteInfo = Spectre;
-		};
-		ABEF66F11FD1507300C3BC59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Rainbow::Rainbow";
-			remoteInfo = Rainbow;
-		};
-		ABEF66F21FD1507300C3BC59 /* PBXContainerItemProxy */ = {
+		33E892811FD3B70A002250D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "CommandLine::CommandLineKit";
 			remoteInfo = CommandLineKit;
 		};
-		ABEF66F31FD1507300C3BC59 /* PBXContainerItemProxy */ = {
+		33E892821FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Rainbow::Rainbow";
+			remoteInfo = Rainbow;
+		};
+		33E892831FD3B70A002250D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Fengniao::FengniaoKit";
 			remoteInfo = FengniaoKit;
 		};
-		ABEF66F41FD1507500C3BC59 /* PBXContainerItemProxy */ = {
+		33E892841FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PathKit::PathKit";
+			remoteInfo = PathKit;
+		};
+		33E892851FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		33E892861FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		33E892871FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PathKit::PathKit";
+			remoteInfo = PathKit;
+		};
+		33E892881FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		33E892891FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CommandLine::CommandLineKit";
+			remoteInfo = CommandLineKit;
+		};
+		33E8928A1FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Rainbow::Rainbow";
+			remoteInfo = Rainbow;
+		};
+		33E8928B1FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Fengniao::FengniaoKit";
+			remoteInfo = FengniaoKit;
+		};
+		33E8928C1FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PathKit::PathKit";
+			remoteInfo = PathKit;
+		};
+		33E8928D1FD3B70A002250D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		33E8928E1FD3B70A002250D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Fengniao::FengNiaoKitTests";
 			remoteInfo = FengNiaoKitTests;
 		};
-		ABEF66F51FD1507500C3BC59 /* PBXContainerItemProxy */ = {
+		33E8928F1FD3B70A002250D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -140,34 +197,35 @@
 		OBJ_10 /* Fengniao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fengniao.swift; sourceTree = "<group>"; };
 		OBJ_11 /* StringSearchRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSearchRule.swift; sourceTree = "<group>"; };
 		OBJ_13 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_16 /* FengNiaoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FengNiaoKitTests.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/PathKit--9185519632264250829/Package.swift"; sourceTree = "<group>"; };
-		OBJ_20 /* PathKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
-		OBJ_22 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/Spectre.git--7655155069707042687/Package.swift"; sourceTree = "<group>"; };
-		OBJ_23 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
-		OBJ_25 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		OBJ_28 /* GlobalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContext.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
-		OBJ_32 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/Rainbow-4833422609927903952/Package.swift"; sourceTree = "<group>"; };
-		OBJ_33 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
-		OBJ_34 /* CodesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesParser.swift; sourceTree = "<group>"; };
-		OBJ_35 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		OBJ_36 /* ControlCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCode.swift; sourceTree = "<group>"; };
-		OBJ_37 /* ModesExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesExtractor.swift; sourceTree = "<group>"; };
-		OBJ_38 /* OutputTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTarget.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
-		OBJ_40 /* String+Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Rainbow.swift"; sourceTree = "<group>"; };
-		OBJ_41 /* StringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
-		OBJ_42 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		OBJ_43 /* XcodeColorsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeColorsSupport.swift; sourceTree = "<group>"; };
-		OBJ_46 /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		OBJ_48 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		OBJ_49 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/luojilab/Documents/github/FengNiaoDemo/.build/checkouts/CommandLine-2650396103741080200/Package.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* FengNiaoKitSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FengNiaoKitSpec.swift; sourceTree = "<group>"; };
+		OBJ_17 /* FengNiaoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FengNiaoKitTests.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/github/FengNiaoDemo/.build/checkouts/PathKit.git--1865447967743163058/Package.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* PathKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/github/FengNiaoDemo/.build/checkouts/Spectre.git--7655155069707042687/Package.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		OBJ_29 /* GlobalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContext.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/github/FengNiaoDemo/.build/checkouts/Rainbow-4833422609927903952/Package.swift"; sourceTree = "<group>"; };
+		OBJ_34 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		OBJ_35 /* CodesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesParser.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		OBJ_37 /* ControlCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCode.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ModesExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesExtractor.swift; sourceTree = "<group>"; };
+		OBJ_39 /* OutputTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTarget.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
+		OBJ_41 /* String+Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Rainbow.swift"; sourceTree = "<group>"; };
+		OBJ_42 /* StringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		OBJ_44 /* XcodeColorsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeColorsSupport.swift; sourceTree = "<group>"; };
+		OBJ_47 /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_49 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/youzhenbei/Documents/github/FengNiaoDemo/.build/checkouts/CommandLine-2650396103741080200/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		"PathKit::PathKit::Product" /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,58 +234,65 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_115 /* Frameworks */ = {
+		OBJ_118 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_116 /* Spectre.framework in Frameworks */,
+				OBJ_119 /* CommandLineKit.framework in Frameworks */,
+				OBJ_120 /* Rainbow.framework in Frameworks */,
+				OBJ_121 /* FengniaoKit.framework in Frameworks */,
+				OBJ_122 /* PathKit.framework in Frameworks */,
+				OBJ_123 /* Spectre.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_130 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_146 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_154 /* Frameworks */ = {
+		OBJ_136 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_161 /* Frameworks */ = {
+		OBJ_152 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_169 /* Frameworks */ = {
+		OBJ_160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_161 /* PathKit.framework in Frameworks */,
+				OBJ_162 /* Spectre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_171 /* Spectre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_94 /* Frameworks */ = {
+		OBJ_95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_95 /* PathKit.framework in Frameworks */,
-				OBJ_96 /* Spectre.framework in Frameworks */,
+				OBJ_96 /* CommandLineKit.framework in Frameworks */,
 				OBJ_97 /* Rainbow.framework in Frameworks */,
-				OBJ_98 /* CommandLineKit.framework in Frameworks */,
-				OBJ_99 /* FengniaoKit.framework in Frameworks */,
+				OBJ_98 /* FengniaoKit.framework in Frameworks */,
+				OBJ_99 /* PathKit.framework in Frameworks */,
+				OBJ_100 /* Spectre.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,85 +319,86 @@
 		OBJ_15 /* FengNiaoKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* FengNiaoKitTests.swift */,
+				OBJ_16 /* FengNiaoKitSpec.swift */,
+				OBJ_17 /* FengNiaoKitTests.swift */,
 			);
 			name = FengNiaoKitTests;
 			path = Tests/FengNiaoKitTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_17 /* Dependencies */ = {
+		OBJ_18 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* PathKit 0.8.0 */,
-				OBJ_21 /* Spectre 0.7.2 */,
-				OBJ_31 /* Rainbow 3.0.3 */,
-				OBJ_44 /* CommandLine 3.0.0-pre1 */,
+				OBJ_19 /* PathKit 0.8.0 */,
+				OBJ_22 /* Spectre 0.7.2 */,
+				OBJ_32 /* Rainbow 3.0.3 */,
+				OBJ_45 /* CommandLine 3.0.0-pre1 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_18 /* PathKit 0.8.0 */ = {
+		OBJ_19 /* PathKit 0.8.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* Package.swift */,
-				OBJ_20 /* PathKit.swift */,
+				OBJ_20 /* Package.swift */,
+				OBJ_21 /* PathKit.swift */,
 			);
 			name = "PathKit 0.8.0";
-			path = ".build/checkouts/PathKit--9185519632264250829/Sources";
+			path = ".build/checkouts/PathKit.git--1865447967743163058/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_21 /* Spectre 0.7.2 */ = {
+		OBJ_22 /* Spectre 0.7.2 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* Package.swift */,
-				OBJ_23 /* Case.swift */,
-				OBJ_24 /* Context.swift */,
-				OBJ_25 /* Expectation.swift */,
-				OBJ_26 /* Failure.swift */,
-				OBJ_27 /* Global.swift */,
-				OBJ_28 /* GlobalContext.swift */,
-				OBJ_29 /* Reporter.swift */,
-				OBJ_30 /* Reporters.swift */,
+				OBJ_23 /* Package.swift */,
+				OBJ_24 /* Case.swift */,
+				OBJ_25 /* Context.swift */,
+				OBJ_26 /* Expectation.swift */,
+				OBJ_27 /* Failure.swift */,
+				OBJ_28 /* Global.swift */,
+				OBJ_29 /* GlobalContext.swift */,
+				OBJ_30 /* Reporter.swift */,
+				OBJ_31 /* Reporters.swift */,
 			);
 			name = "Spectre 0.7.2";
 			path = ".build/checkouts/Spectre.git--7655155069707042687/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_31 /* Rainbow 3.0.3 */ = {
+		OBJ_32 /* Rainbow 3.0.3 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_32 /* Package.swift */,
-				OBJ_33 /* BackgroundColor.swift */,
-				OBJ_34 /* CodesParser.swift */,
-				OBJ_35 /* Color.swift */,
-				OBJ_36 /* ControlCode.swift */,
-				OBJ_37 /* ModesExtractor.swift */,
-				OBJ_38 /* OutputTarget.swift */,
-				OBJ_39 /* Rainbow.swift */,
-				OBJ_40 /* String+Rainbow.swift */,
-				OBJ_41 /* StringGenerator.swift */,
-				OBJ_42 /* Style.swift */,
-				OBJ_43 /* XcodeColorsSupport.swift */,
+				OBJ_33 /* Package.swift */,
+				OBJ_34 /* BackgroundColor.swift */,
+				OBJ_35 /* CodesParser.swift */,
+				OBJ_36 /* Color.swift */,
+				OBJ_37 /* ControlCode.swift */,
+				OBJ_38 /* ModesExtractor.swift */,
+				OBJ_39 /* OutputTarget.swift */,
+				OBJ_40 /* Rainbow.swift */,
+				OBJ_41 /* String+Rainbow.swift */,
+				OBJ_42 /* StringGenerator.swift */,
+				OBJ_43 /* Style.swift */,
+				OBJ_44 /* XcodeColorsSupport.swift */,
 			);
 			name = "Rainbow 3.0.3";
 			path = ".build/checkouts/Rainbow-4833422609927903952/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_44 /* CommandLine 3.0.0-pre1 */ = {
+		OBJ_45 /* CommandLine 3.0.0-pre1 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_45 /* CommandLineKit */,
-				OBJ_49 /* Package.swift */,
+				OBJ_46 /* CommandLineKit */,
+				OBJ_50 /* Package.swift */,
 			);
 			name = "CommandLine 3.0.0-pre1";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_45 /* CommandLineKit */ = {
+		OBJ_46 /* CommandLineKit */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_46 /* CommandLine.swift */,
-				OBJ_47 /* Option.swift */,
-				OBJ_48 /* StringExtensions.swift */,
+				OBJ_47 /* CommandLine.swift */,
+				OBJ_48 /* Option.swift */,
+				OBJ_49 /* StringExtensions.swift */,
 			);
 			name = CommandLineKit;
 			path = ".build/checkouts/CommandLine-2650396103741080200/CommandLineKit";
@@ -344,22 +410,22 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_14 /* Tests */,
-				OBJ_17 /* Dependencies */,
-				OBJ_50 /* Products */,
+				OBJ_18 /* Dependencies */,
+				OBJ_51 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_50 /* Products */ = {
+		OBJ_51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"Fengniao::Fengniao::Product" /* Fengniao */,
+				"Fengniao::FengNiaoKitTests::Product" /* FengNiaoKitTests.xctest */,
+				"CommandLine::CommandLineKit::Product" /* CommandLineKit.framework */,
+				"Rainbow::Rainbow::Product" /* Rainbow.framework */,
+				"Fengniao::FengniaoKit::Product" /* FengniaoKit.framework */,
 				"PathKit::PathKit::Product" /* PathKit.framework */,
 				"Spectre::Spectre::Product" /* Spectre.framework */,
-				"Rainbow::Rainbow::Product" /* Rainbow.framework */,
-				"CommandLine::CommandLineKit::Product" /* CommandLineKit.framework */,
-				"Fengniao::FengNiaoKitTests::Product" /* FengNiaoKitTests.xctest */,
-				"Fengniao::FengniaoKit::Product" /* FengniaoKit.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -389,10 +455,10 @@
 /* Begin PBXNativeTarget section */
 		"CommandLine::CommandLineKit" /* CommandLineKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "CommandLineKit" */;
+			buildConfigurationList = OBJ_129 /* Build configuration list for PBXNativeTarget "CommandLineKit" */;
 			buildPhases = (
-				OBJ_150 /* Sources */,
-				OBJ_154 /* Frameworks */,
+				OBJ_132 /* Sources */,
+				OBJ_136 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,9 +471,9 @@
 		};
 		"CommandLine::SwiftPMPackageDescription" /* CommandLinePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_83 /* Build configuration list for PBXNativeTarget "CommandLinePackageDescription" */;
+			buildConfigurationList = OBJ_84 /* Build configuration list for PBXNativeTarget "CommandLinePackageDescription" */;
 			buildPhases = (
-				OBJ_86 /* Sources */,
+				OBJ_87 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -419,14 +485,19 @@
 		};
 		"Fengniao::FengNiaoKitTests" /* FengNiaoKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_156 /* Build configuration list for PBXNativeTarget "FengNiaoKitTests" */;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "FengNiaoKitTests" */;
 			buildPhases = (
-				OBJ_159 /* Sources */,
-				OBJ_161 /* Frameworks */,
+				OBJ_115 /* Sources */,
+				OBJ_118 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_124 /* PBXTargetDependency */,
+				OBJ_125 /* PBXTargetDependency */,
+				OBJ_126 /* PBXTargetDependency */,
+				OBJ_127 /* PBXTargetDependency */,
+				OBJ_128 /* PBXTargetDependency */,
 			);
 			name = FengNiaoKitTests;
 			productName = FengNiaoKitTests;
@@ -435,19 +506,19 @@
 		};
 		"Fengniao::Fengniao" /* Fengniao */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_89 /* Build configuration list for PBXNativeTarget "Fengniao" */;
+			buildConfigurationList = OBJ_90 /* Build configuration list for PBXNativeTarget "Fengniao" */;
 			buildPhases = (
-				OBJ_92 /* Sources */,
-				OBJ_94 /* Frameworks */,
+				OBJ_93 /* Sources */,
+				OBJ_95 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_100 /* PBXTargetDependency */,
-				OBJ_102 /* PBXTargetDependency */,
-				OBJ_104 /* PBXTargetDependency */,
-				OBJ_106 /* PBXTargetDependency */,
-				OBJ_108 /* PBXTargetDependency */,
+				OBJ_101 /* PBXTargetDependency */,
+				OBJ_103 /* PBXTargetDependency */,
+				OBJ_105 /* PBXTargetDependency */,
+				OBJ_107 /* PBXTargetDependency */,
+				OBJ_109 /* PBXTargetDependency */,
 			);
 			name = Fengniao;
 			productName = Fengniao;
@@ -456,14 +527,16 @@
 		};
 		"Fengniao::FengniaoKit" /* FengniaoKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_162 /* Build configuration list for PBXNativeTarget "FengniaoKit" */;
+			buildConfigurationList = OBJ_153 /* Build configuration list for PBXNativeTarget "FengniaoKit" */;
 			buildPhases = (
-				OBJ_165 /* Sources */,
-				OBJ_169 /* Frameworks */,
+				OBJ_156 /* Sources */,
+				OBJ_160 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_163 /* PBXTargetDependency */,
+				OBJ_164 /* PBXTargetDependency */,
 			);
 			name = FengniaoKit;
 			productName = FengniaoKit;
@@ -472,9 +545,9 @@
 		};
 		"Fengniao::SwiftPMPackageDescription" /* FengniaoPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "FengniaoPackageDescription" */;
+			buildConfigurationList = OBJ_60 /* Build configuration list for PBXNativeTarget "FengniaoPackageDescription" */;
 			buildPhases = (
-				OBJ_62 /* Sources */,
+				OBJ_63 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -486,15 +559,15 @@
 		};
 		"PathKit::PathKit" /* PathKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_110 /* Build configuration list for PBXNativeTarget "PathKit" */;
+			buildConfigurationList = OBJ_165 /* Build configuration list for PBXNativeTarget "PathKit" */;
 			buildPhases = (
-				OBJ_113 /* Sources */,
-				OBJ_115 /* Frameworks */,
+				OBJ_168 /* Sources */,
+				OBJ_170 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_117 /* PBXTargetDependency */,
+				OBJ_172 /* PBXTargetDependency */,
 			);
 			name = PathKit;
 			productName = PathKit;
@@ -503,9 +576,9 @@
 		};
 		"PathKit::SwiftPMPackageDescription" /* PathKitPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "PathKitPackageDescription" */;
+			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "PathKitPackageDescription" */;
 			buildPhases = (
-				OBJ_68 /* Sources */,
+				OBJ_69 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -517,10 +590,10 @@
 		};
 		"Rainbow::Rainbow" /* Rainbow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_131 /* Build configuration list for PBXNativeTarget "Rainbow" */;
+			buildConfigurationList = OBJ_137 /* Build configuration list for PBXNativeTarget "Rainbow" */;
 			buildPhases = (
-				OBJ_134 /* Sources */,
-				OBJ_146 /* Frameworks */,
+				OBJ_140 /* Sources */,
+				OBJ_152 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -533,9 +606,9 @@
 		};
 		"Rainbow::SwiftPMPackageDescription" /* RainbowPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "RainbowPackageDescription" */;
+			buildConfigurationList = OBJ_78 /* Build configuration list for PBXNativeTarget "RainbowPackageDescription" */;
 			buildPhases = (
-				OBJ_80 /* Sources */,
+				OBJ_81 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -547,10 +620,10 @@
 		};
 		"Spectre::Spectre" /* Spectre */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_118 /* Build configuration list for PBXNativeTarget "Spectre" */;
+			buildConfigurationList = OBJ_173 /* Build configuration list for PBXNativeTarget "Spectre" */;
 			buildPhases = (
-				OBJ_121 /* Sources */,
-				OBJ_130 /* Frameworks */,
+				OBJ_176 /* Sources */,
+				OBJ_185 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -563,9 +636,9 @@
 		};
 		"Spectre::SwiftPMPackageDescription" /* SpectrePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_71 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */;
+			buildConfigurationList = OBJ_72 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */;
 			buildPhases = (
-				OBJ_74 /* Sources */,
+				OBJ_75 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -591,7 +664,7 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_50 /* Products */;
+			productRefGroup = OBJ_51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -601,12 +674,12 @@
 				"Rainbow::SwiftPMPackageDescription" /* RainbowPackageDescription */,
 				"CommandLine::SwiftPMPackageDescription" /* CommandLinePackageDescription */,
 				"Fengniao::Fengniao" /* Fengniao */,
+				"Fengniao::FengNiaoKitTests" /* FengNiaoKitTests */,
+				"CommandLine::CommandLineKit" /* CommandLineKit */,
+				"Rainbow::Rainbow" /* Rainbow */,
+				"Fengniao::FengniaoKit" /* FengniaoKit */,
 				"PathKit::PathKit" /* PathKit */,
 				"Spectre::Spectre" /* Spectre */,
-				"Rainbow::Rainbow" /* Rainbow */,
-				"CommandLine::CommandLineKit" /* CommandLineKit */,
-				"Fengniao::FengNiaoKitTests" /* FengNiaoKitTests */,
-				"Fengniao::FengniaoKit" /* FengniaoKit */,
 				"Fengniao::FengniaoPackageTests::ProductTarget" /* FengniaoPackageTests */,
 				"CommandLine::CommandLine::ProductTarget" /* CommandLine */,
 			);
@@ -614,302 +687,242 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_113 /* Sources */ = {
+		OBJ_115 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_114 /* PathKit.swift in Sources */,
+				OBJ_116 /* FengNiaoKitSpec.swift in Sources */,
+				OBJ_117 /* FengNiaoKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_121 /* Sources */ = {
+		OBJ_132 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_122 /* Case.swift in Sources */,
-				OBJ_123 /* Context.swift in Sources */,
-				OBJ_124 /* Expectation.swift in Sources */,
-				OBJ_125 /* Failure.swift in Sources */,
-				OBJ_126 /* Global.swift in Sources */,
-				OBJ_127 /* GlobalContext.swift in Sources */,
-				OBJ_128 /* Reporter.swift in Sources */,
-				OBJ_129 /* Reporters.swift in Sources */,
+				OBJ_133 /* CommandLine.swift in Sources */,
+				OBJ_134 /* Option.swift in Sources */,
+				OBJ_135 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_134 /* Sources */ = {
+		OBJ_140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_135 /* BackgroundColor.swift in Sources */,
-				OBJ_136 /* CodesParser.swift in Sources */,
-				OBJ_137 /* Color.swift in Sources */,
-				OBJ_138 /* ControlCode.swift in Sources */,
-				OBJ_139 /* ModesExtractor.swift in Sources */,
-				OBJ_140 /* OutputTarget.swift in Sources */,
-				OBJ_141 /* Rainbow.swift in Sources */,
-				OBJ_142 /* String+Rainbow.swift in Sources */,
-				OBJ_143 /* StringGenerator.swift in Sources */,
-				OBJ_144 /* Style.swift in Sources */,
-				OBJ_145 /* XcodeColorsSupport.swift in Sources */,
+				OBJ_141 /* BackgroundColor.swift in Sources */,
+				OBJ_142 /* CodesParser.swift in Sources */,
+				OBJ_143 /* Color.swift in Sources */,
+				OBJ_144 /* ControlCode.swift in Sources */,
+				OBJ_145 /* ModesExtractor.swift in Sources */,
+				OBJ_146 /* OutputTarget.swift in Sources */,
+				OBJ_147 /* Rainbow.swift in Sources */,
+				OBJ_148 /* String+Rainbow.swift in Sources */,
+				OBJ_149 /* StringGenerator.swift in Sources */,
+				OBJ_150 /* Style.swift in Sources */,
+				OBJ_151 /* XcodeColorsSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_150 /* Sources */ = {
+		OBJ_156 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_151 /* CommandLine.swift in Sources */,
-				OBJ_152 /* Option.swift in Sources */,
-				OBJ_153 /* StringExtensions.swift in Sources */,
+				OBJ_157 /* Extensions.swift in Sources */,
+				OBJ_158 /* Fengniao.swift in Sources */,
+				OBJ_159 /* StringSearchRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_159 /* Sources */ = {
+		OBJ_168 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_160 /* FengNiaoKitTests.swift in Sources */,
+				OBJ_169 /* PathKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_165 /* Sources */ = {
+		OBJ_176 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_166 /* Extensions.swift in Sources */,
-				OBJ_167 /* Fengniao.swift in Sources */,
-				OBJ_168 /* StringSearchRule.swift in Sources */,
+				OBJ_177 /* Case.swift in Sources */,
+				OBJ_178 /* Context.swift in Sources */,
+				OBJ_179 /* Expectation.swift in Sources */,
+				OBJ_180 /* Failure.swift in Sources */,
+				OBJ_181 /* Global.swift in Sources */,
+				OBJ_182 /* GlobalContext.swift in Sources */,
+				OBJ_183 /* Reporter.swift in Sources */,
+				OBJ_184 /* Reporters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_62 /* Sources */ = {
+		OBJ_63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_63 /* Package.swift in Sources */,
+				OBJ_64 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_68 /* Sources */ = {
+		OBJ_69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_69 /* Package.swift in Sources */,
+				OBJ_70 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_74 /* Sources */ = {
+		OBJ_75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_75 /* Package.swift in Sources */,
+				OBJ_76 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_80 /* Sources */ = {
+		OBJ_81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_81 /* Package.swift in Sources */,
+				OBJ_82 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_86 /* Sources */ = {
+		OBJ_87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_87 /* Package.swift in Sources */,
+				OBJ_88 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_92 /* Sources */ = {
+		OBJ_93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_93 /* main.swift in Sources */,
+				OBJ_94 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_100 /* PBXTargetDependency */ = {
+		OBJ_101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "PathKit::PathKit" /* PathKit */;
-			targetProxy = ABEF66EE1FD1507300C3BC59 /* PBXContainerItemProxy */;
+			target = "CommandLine::CommandLineKit" /* CommandLineKit */;
+			targetProxy = 33E892811FD3B70A002250D9 /* PBXContainerItemProxy */;
 		};
-		OBJ_102 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = ABEF66F01FD1507300C3BC59 /* PBXContainerItemProxy */;
-		};
-		OBJ_104 /* PBXTargetDependency */ = {
+		OBJ_103 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Rainbow::Rainbow" /* Rainbow */;
-			targetProxy = ABEF66F11FD1507300C3BC59 /* PBXContainerItemProxy */;
+			targetProxy = 33E892821FD3B70A002250D9 /* PBXContainerItemProxy */;
 		};
-		OBJ_106 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "CommandLine::CommandLineKit" /* CommandLineKit */;
-			targetProxy = ABEF66F21FD1507300C3BC59 /* PBXContainerItemProxy */;
-		};
-		OBJ_108 /* PBXTargetDependency */ = {
+		OBJ_105 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Fengniao::FengniaoKit" /* FengniaoKit */;
-			targetProxy = ABEF66F31FD1507300C3BC59 /* PBXContainerItemProxy */;
+			targetProxy = 33E892831FD3B70A002250D9 /* PBXContainerItemProxy */;
 		};
-		OBJ_117 /* PBXTargetDependency */ = {
+		OBJ_107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PathKit::PathKit" /* PathKit */;
+			targetProxy = 33E892871FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_109 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = ABEF66EF1FD1507300C3BC59 /* PBXContainerItemProxy */;
+			targetProxy = 33E892881FD3B70A002250D9 /* PBXContainerItemProxy */;
 		};
-		OBJ_174 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Fengniao::FengNiaoKitTests" /* FengNiaoKitTests */;
-			targetProxy = ABEF66F41FD1507500C3BC59 /* PBXContainerItemProxy */;
-		};
-		OBJ_179 /* PBXTargetDependency */ = {
+		OBJ_124 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "CommandLine::CommandLineKit" /* CommandLineKit */;
-			targetProxy = ABEF66F51FD1507500C3BC59 /* PBXContainerItemProxy */;
+			targetProxy = 33E892891FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Rainbow::Rainbow" /* Rainbow */;
+			targetProxy = 33E8928A1FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Fengniao::FengniaoKit" /* FengniaoKit */;
+			targetProxy = 33E8928B1FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PathKit::PathKit" /* PathKit */;
+			targetProxy = 33E8928C1FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 33E8928D1FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PathKit::PathKit" /* PathKit */;
+			targetProxy = 33E892841FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 33E892861FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 33E892851FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Fengniao::FengNiaoKitTests" /* FengNiaoKitTests */;
+			targetProxy = 33E8928E1FD3B70A002250D9 /* PBXContainerItemProxy */;
+		};
+		OBJ_195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CommandLine::CommandLineKit" /* CommandLineKit */;
+			targetProxy = 33E8928F1FD3B70A002250D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_111 /* Debug */ = {
+		OBJ_113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/PathKit_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				INFOPLIST_FILE = Fengniao.xcodeproj/FengNiaoKitTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PathKit;
-			};
-			name = Debug;
-		};
-		OBJ_112 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/PathKit_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PathKit;
-			};
-			name = Release;
-		};
-		OBJ_119 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/Spectre_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Spectre;
-			};
-			name = Debug;
-		};
-		OBJ_120 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/Spectre_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Spectre;
-			};
-			name = Release;
-		};
-		OBJ_132 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/Rainbow_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Rainbow;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Rainbow;
+				TARGET_NAME = FengNiaoKitTests;
 			};
 			name = Debug;
 		};
-		OBJ_133 /* Release */ = {
+		OBJ_114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/Rainbow_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				INFOPLIST_FILE = Fengniao.xcodeproj/FengNiaoKitTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Rainbow;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Rainbow;
+				TARGET_NAME = FengNiaoKitTests;
 			};
 			name = Release;
 		};
-		OBJ_148 /* Debug */ = {
+		OBJ_130 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -931,7 +944,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_149 /* Release */ = {
+		OBJ_131 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -953,43 +966,51 @@
 			};
 			name = Release;
 		};
-		OBJ_157 /* Debug */ = {
+		OBJ_138 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/FengNiaoKitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = Fengniao.xcodeproj/Rainbow_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Rainbow;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = FengNiaoKitTests;
+				TARGET_NAME = Rainbow;
 			};
 			name = Debug;
 		};
-		OBJ_158 /* Release */ = {
+		OBJ_139 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Fengniao.xcodeproj/FengNiaoKitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = Fengniao.xcodeproj/Rainbow_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Rainbow;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = FengNiaoKitTests;
+				TARGET_NAME = Rainbow;
 			};
 			name = Release;
 		};
-		OBJ_163 /* Debug */ = {
+		OBJ_154 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1011,7 +1032,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_164 /* Release */ = {
+		OBJ_155 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1033,25 +1054,113 @@
 			};
 			name = Release;
 		};
-		OBJ_172 /* Debug */ = {
+		OBJ_166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fengniao.xcodeproj/PathKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PathKit;
+			};
+			name = Debug;
+		};
+		OBJ_167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fengniao.xcodeproj/PathKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PathKit;
+			};
+			name = Release;
+		};
+		OBJ_174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fengniao.xcodeproj/Spectre_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Spectre;
+			};
+			name = Debug;
+		};
+		OBJ_175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fengniao.xcodeproj/Spectre_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Spectre;
+			};
+			name = Release;
+		};
+		OBJ_188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_173 /* Release */ = {
+		OBJ_189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_177 /* Debug */ = {
+		OBJ_193 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_178 /* Release */ = {
+		OBJ_194 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -1099,7 +1208,7 @@
 			};
 			name = Release;
 		};
-		OBJ_60 /* Debug */ = {
+		OBJ_61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1108,7 +1217,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_61 /* Release */ = {
+		OBJ_62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1117,7 +1226,7 @@
 			};
 			name = Release;
 		};
-		OBJ_66 /* Debug */ = {
+		OBJ_67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1126,7 +1235,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_67 /* Release */ = {
+		OBJ_68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1135,7 +1244,7 @@
 			};
 			name = Release;
 		};
-		OBJ_72 /* Debug */ = {
+		OBJ_73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1144,7 +1253,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_73 /* Release */ = {
+		OBJ_74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1153,7 +1262,7 @@
 			};
 			name = Release;
 		};
-		OBJ_78 /* Debug */ = {
+		OBJ_79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1162,7 +1271,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_79 /* Release */ = {
+		OBJ_80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1171,7 +1280,7 @@
 			};
 			name = Release;
 		};
-		OBJ_84 /* Debug */ = {
+		OBJ_85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1180,7 +1289,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_85 /* Release */ = {
+		OBJ_86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1189,7 +1298,7 @@
 			};
 			name = Release;
 		};
-		OBJ_90 /* Debug */ = {
+		OBJ_91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1208,7 +1317,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_91 /* Release */ = {
+		OBJ_92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1230,74 +1339,74 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_110 /* Build configuration list for PBXNativeTarget "PathKit" */ = {
+		OBJ_112 /* Build configuration list for PBXNativeTarget "FengNiaoKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_111 /* Debug */,
-				OBJ_112 /* Release */,
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_118 /* Build configuration list for PBXNativeTarget "Spectre" */ = {
+		OBJ_129 /* Build configuration list for PBXNativeTarget "CommandLineKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_119 /* Debug */,
-				OBJ_120 /* Release */,
+				OBJ_130 /* Debug */,
+				OBJ_131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_131 /* Build configuration list for PBXNativeTarget "Rainbow" */ = {
+		OBJ_137 /* Build configuration list for PBXNativeTarget "Rainbow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_132 /* Debug */,
-				OBJ_133 /* Release */,
+				OBJ_138 /* Debug */,
+				OBJ_139 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_147 /* Build configuration list for PBXNativeTarget "CommandLineKit" */ = {
+		OBJ_153 /* Build configuration list for PBXNativeTarget "FengniaoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_148 /* Debug */,
-				OBJ_149 /* Release */,
+				OBJ_154 /* Debug */,
+				OBJ_155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_156 /* Build configuration list for PBXNativeTarget "FengNiaoKitTests" */ = {
+		OBJ_165 /* Build configuration list for PBXNativeTarget "PathKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_157 /* Debug */,
-				OBJ_158 /* Release */,
+				OBJ_166 /* Debug */,
+				OBJ_167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_162 /* Build configuration list for PBXNativeTarget "FengniaoKit" */ = {
+		OBJ_173 /* Build configuration list for PBXNativeTarget "Spectre" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_163 /* Debug */,
-				OBJ_164 /* Release */,
+				OBJ_174 /* Debug */,
+				OBJ_175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_171 /* Build configuration list for PBXAggregateTarget "FengniaoPackageTests" */ = {
+		OBJ_187 /* Build configuration list for PBXAggregateTarget "FengniaoPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_172 /* Debug */,
-				OBJ_173 /* Release */,
+				OBJ_188 /* Debug */,
+				OBJ_189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_176 /* Build configuration list for PBXAggregateTarget "CommandLine" */ = {
+		OBJ_192 /* Build configuration list for PBXAggregateTarget "CommandLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_177 /* Debug */,
-				OBJ_178 /* Release */,
+				OBJ_193 /* Debug */,
+				OBJ_194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1311,56 +1420,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_59 /* Build configuration list for PBXNativeTarget "FengniaoPackageDescription" */ = {
+		OBJ_60 /* Build configuration list for PBXNativeTarget "FengniaoPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_60 /* Debug */,
-				OBJ_61 /* Release */,
+				OBJ_61 /* Debug */,
+				OBJ_62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_65 /* Build configuration list for PBXNativeTarget "PathKitPackageDescription" */ = {
+		OBJ_66 /* Build configuration list for PBXNativeTarget "PathKitPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_66 /* Debug */,
-				OBJ_67 /* Release */,
+				OBJ_67 /* Debug */,
+				OBJ_68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_71 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */ = {
+		OBJ_72 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_72 /* Debug */,
-				OBJ_73 /* Release */,
+				OBJ_73 /* Debug */,
+				OBJ_74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_77 /* Build configuration list for PBXNativeTarget "RainbowPackageDescription" */ = {
+		OBJ_78 /* Build configuration list for PBXNativeTarget "RainbowPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_78 /* Debug */,
-				OBJ_79 /* Release */,
+				OBJ_79 /* Debug */,
+				OBJ_80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_83 /* Build configuration list for PBXNativeTarget "CommandLinePackageDescription" */ = {
+		OBJ_84 /* Build configuration list for PBXNativeTarget "CommandLinePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_84 /* Debug */,
-				OBJ_85 /* Release */,
+				OBJ_85 /* Debug */,
+				OBJ_86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_89 /* Build configuration list for PBXNativeTarget "Fengniao" */ = {
+		OBJ_90 /* Build configuration list for PBXNativeTarget "Fengniao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_90 /* Debug */,
-				OBJ_91 /* Release */,
+				OBJ_91 /* Debug */,
+				OBJ_92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

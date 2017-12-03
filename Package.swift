@@ -10,17 +10,20 @@ let package = Package(
                  from: "3.0.0-pre1"),
         .package(url: "https://github.com/onevcat/Rainbow",
                  from: "3.0.0"),
-        .package(url: "https://github.com/kylef/PathKit",
+        .package(url: "https://github.com/kylef/PathKit.git",
                  from: "0.8.0"),
         .package(url: "https://github.com/kylef/Spectre.git",
-                 from: "0.8.0")
+                 from: "0.7.2")
     ],
     targets: [
-        .target(name: "FengniaoKit"),
-        .target(name: "Fengniao",
-                dependencies: ["FengniaoKit"]),
-        .testTarget(name: "FengNiaoKitTests")
-        
+        .target(name: "FengniaoKit", dependencies: ["PathKit"]),
+        .target(name: "Fengniao", dependencies: ["FengniaoKit",
+                                                 "Rainbow",
+                                                 "CommandLine"]),
+        .testTarget(name: "FengNiaoKitTests",
+                    dependencies: ["FengniaoKit",
+                                   "Rainbow",
+                                   "CommandLine"],
+                    exclude: [ "Tests/Fixtures" ])
     ]
-    
 )
