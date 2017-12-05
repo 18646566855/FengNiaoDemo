@@ -47,6 +47,47 @@ extension String {
     }
     
 }
+
+let digitalRex = try! NSRegularExpression(pattern: "(\\d+)", options: .caseInsensitive)
+extension String {
+    
+    func similarPatternWithNumberIndex(other: String) -> Bool {
+
+        let matches = digitalRex.matches(in: other, options: [], range: other.fullRange)
+        
+        guard matches.count >= 1 else { return false }
+        let lastMatch = matches.last!
+        let digitalRange = lastMatch.range(at: 1)
+        
+        var prefix: String?
+        var suffix: String?
+        
+        let digitalLocation = digitalRange.location
+        if digitalLocation != 0 {
+            let index = other.index(other.startIndex, offsetBy: digitalLocation)
+            prefix = other.substring(to: index)
+        }
+        
+        let digitalMaxRange = NSMaxRange(digitalRange)
+        if digitalMaxRange < other.utf16.count {
+            let index = other.index(other.startIndex, offsetBy: digitalMaxRange)
+            suffix = other.substring(from: index)
+        }
+        
+        switch (prefix, suffix) {
+        case (nil, nil):
+            return false // only digital
+        case (let p?, let s?):
+            return hasPrefix(p) && hasSuffix(s)
+        case (let p?, nil):
+            return hasPrefix(p)
+        case (nil, let s?):
+            return hasSuffix(s)
+        }
+    }
+}
+
+
 let fileSizeSuffix = ["B", "KB", "MB", "GB"]
 
 

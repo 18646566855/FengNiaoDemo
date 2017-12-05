@@ -82,9 +82,12 @@ let fileExt = fileExtOption.value ?? ["m", "mm", "swift", "xib", "storyboard", "
 
 let excloudePaths = excludePathOption.value ?? []
 
+print(fileExt)
+print(fileExt.count)
+
 let fengniao = Fengniao(projectPath: project,
                         excludedPaths: excloudePaths,
-                        resourcsExt: resourceExt,
+                        resourcsExts: resourceExt,
                         searchInFileExtensions: fileExt)
 
 let unusedFiles: [FileInfo]

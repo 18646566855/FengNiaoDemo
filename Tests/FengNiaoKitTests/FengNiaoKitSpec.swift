@@ -46,6 +46,29 @@ public func specFengNiaoKit() {
             }
         }
         
+        
+        $0.describe("String image_number.ext") {
+            $0.it("String similarPatternWithNumberIndex") {
+                let s1 = "image_01.png"
+                let s2 = "image_index_01.png"
+                let s3 = "image_01_index.png"
+                let s4 = "01_image.png"
+                
+                let n1 = "image_%zd"
+                let n2 = "image_index_%zd"
+                let n3 = "image_%zd_index.png"
+                let n4 = "%zd_image.png"
+                
+                try expect(s1.similarPatternWithNumberIndex(other: n1)) == true
+                try expect(s2.similarPatternWithNumberIndex(other: n2)) == true
+                try expect(s3.similarPatternWithNumberIndex(other: n3)) == true
+                try expect(s4.similarPatternWithNumberIndex(other: n4)) == true
+                
+            }
+            
+            
+        }
+        
         $0.describe("file Size Int Extesnions") {
             $0.describe("Int Extesnions") {
                 $0.it("should parse for 0 byte") {

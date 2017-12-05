@@ -10,10 +10,14 @@ enum Filetype {
     
     init?(ext: String) {
         switch ext.lowercased() {
-        case "swift": self = .swift
-        case "m", "mm": self = .objc
-        case "xib", "storyboard": self = .xib
-        case "plist": self = .plist
+        case "swift":
+            self = .swift
+        case "m", "mm":
+            self = .objc
+        case "xib", "storyboard":
+            self = .xib
+        case "plist":
+            self = .plist
         default: return nil
         }
     }
@@ -21,8 +25,8 @@ enum Filetype {
     func searchRule(extensions: [String]) -> [FileSearchRule] {
         switch self {
         case .swift: return [SwiftImageSearchRule(extensions: extensions)]
-        case .objc: return [ObjcImageSearchRule(extensions: extensions)]
-        case .xib:  return [XibImageSearchRule()]
+        case .objc:  return [ObjcImageSearchRule(extensions: extensions)]
+        case .xib:   return [XibImageSearchRule()]
         case .plist: return [PlistImageSearchRule(extensions: extensions)]
         }
     }
@@ -52,27 +56,66 @@ public struct FileInfo {
 public struct Fengniao {
     let projectPath: Path
     let excludedPaths: [Path]
-    let resourcsExt: [String]
-    let searchInFileExtensions:[String]
+    let resourcsExts: [String]
+    let searchInFileExts:[String]
     
-    public init(projectPath: String, excludedPaths: [String], resourcsExt: [String], searchInFileExtensions:[String]){
+    let regularDirExtensions = ["imageset", "launchimage", "appiconset", "bundle"]
+    var nonDirExtensions: [String] {
+        return resourcsExts.filter{ !regularDirExtensions.contains($0) }
+    }
+    
+    public init(projectPath: String, excludedPaths: [String], resourcsExts: [String], searchInFileExtensions:[String]){
         let path = Path(projectPath).absolute()
         self.projectPath = path
         self.excludedPaths = excludedPaths.map{ path + Path($0) }
-        self.resourcsExt = resourcsExt
-        self.searchInFileExtensions = searchInFileExtensions
+        self.resourcsExts = resourcsExts
+        self.searchInFileExts = searchInFileExtensions
     }
     
     public func unusedFiles() throws-> [FileInfo] {
-        guard !resourcsExt.isEmpty else {
+        guard !resourcsExts.isEmpty else {
             throw FengNiaoError.noResourceExtension
         }
+        guard !searchInFileExts.isEmpty else {
+            throw FengNiaoError.noFileExtension
+        }
         
-        //        let allResources = allResources
+        let allResources = allResourcsFiles()
+        let usedNames = allUsedStringNames()
         
-        
-        fatalError("错误信息")
+        return Fengniao.filterUnused(from: allResources, used: usedNames).map { FileInfo.init(path: $0)}
     }
+    
+    func allResourcsFiles() -> [String: Set<String>] {
+        let find = ExtensionFindProcess(path: projectPath, extensions: resourcsExts, excluded: excludedPaths)
+        guard let result = find?.execute() else {
+            print("Resource finding failed.".red)
+            return [:]
+        }
+        
+        var files = [String: Set<String>]()
+        fileLoop: for file in result {
+    
+            let dirPaths = regularDirExtensions.map { ".\($0)/" }
+            for dir in dirPaths where file.contains(dir) {
+                continue fileLoop
+            }
+            
+            let filePath = Path(file)
+            if let ext = filePath.extension, filePath.isDirectory && nonDirExtensions.contains(ext)  {
+                continue
+            }
+            
+            let key = file.plainName(extenions: resourcsExts)
+            if let existing = files[key] {
+                files[key] = existing.union([file])
+            } else {
+                files[key] = [file]
+            }
+        }
+        return files
+    }
+    
     
     func allUsedStringNames() -> Set<String> {
         
@@ -97,22 +140,18 @@ public struct Fengniao {
                 result.append(contentsOf: usedStringNames(at: subPath))
             } else {
                 let fileExt = subPath.extension ?? ""
-                guard searchInFileExtensions.contains(fileExt) else {
+                guard searchInFileExts.contains(fileExt) else {
                     continue
                 }
                 let fileType = Filetype(ext: fileExt)
-                let searchRules = fileType?.searchRule(extensions: resourcsExt) ?? [PlainImageSearchRule(extensions: resourcsExt)]
+                let searchRules = fileType?.searchRule(extensions: resourcsExts) ?? [PlainImageSearchRule(extensions: resourcsExts)]
                 let content = (try? subPath.read()) ?? ""
                 result.append(contentsOf: searchRules.flatMap { $0.searcher(in: content) })
             }
         }
         return Set(result)
     }
-    
-    func resourceInUse() -> [String: String] {
-        fatalError()
-    }
-    
+
     
     public func delete(_ unusedFiles: [FileInfo]) -> (deleted: [FileInfo], failed: [(FileInfo, Error)]) {
         var deleted = [FileInfo]()
@@ -128,8 +167,11 @@ public struct Fengniao {
         return (deleted, failed)
     }
     
-    public func allResourcsFiles() -> [String: Set<String>] {
-        
-        fatalError()
+    static func filterUnused(from all: [String: Set<String>], used: Set<String>) -> Set<String> {
+        let unusedPairs = all.filter { key, _ in
+            return !used.contains(key) &&
+                !used.contains { $0.similarPatternWithNumberIndex(other: key) }
+        }
+        return Set( unusedPairs.flatMap { $0.value } )
     }
 }
