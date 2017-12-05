@@ -43,6 +43,13 @@ let versionOption = BoolOption(longFlag: "version",
                                helpMessage: "Print version.")
 cli.addOption(versionOption)
 
+let isForceOption = BoolOption(
+    longFlag: "force",
+    helpMessage: "Delete the found unused files without asking.")
+cli.addOption(isForceOption)
+
+
+
 cli.formatOutput = {s, type in
     var str : String
     switch (type) {
@@ -111,6 +118,26 @@ if unusedFiles.isEmpty {
     print("🤗")
     exit(EX_OK)
 }
+
+if !false {
+    var result = promptResult(files: unusedFiles)
+    while result == .list {
+        for file in unusedFiles {
+            print("\(file.readableSize) \(file.path.string)")
+        }
+        result = promptResult(files: unusedFiles)
+    }
+    switch result {
+    case .list:
+        fatalError()
+    case .delete:
+        break
+    case .ignore:
+        print("Ignored. Nothing to do, bye!".green.bold)
+        exit(EX_OK)
+    }
+}
+
 
 
 
