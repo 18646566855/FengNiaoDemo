@@ -90,6 +90,20 @@
                ReferencedContainer = "container:Fengniao.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Fengniao::FengNiaoKitTests"
+               BuildableName = "FengNiaoKitTests.xctest"
+               BlueprintName = "FengNiaoKitTests"
+               ReferencedContainer = "container:Fengniao.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -110,6 +124,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "Fengniao::Fengniao"
+            BuildableName = "Fengniao"
+            BlueprintName = "Fengniao"
+            ReferencedContainer = "container:Fengniao.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -142,6 +165,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "Fengniao::Fengniao"
+            BuildableName = "Fengniao"
+            BlueprintName = "Fengniao"
+            ReferencedContainer = "container:Fengniao.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

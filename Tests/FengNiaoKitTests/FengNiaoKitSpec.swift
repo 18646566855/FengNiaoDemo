@@ -49,20 +49,20 @@ public func specFengNiaoKit() {
         
         $0.describe("String image_number.ext") {
             $0.it("String similarPatternWithNumberIndex") {
-                let s1 = "image_01.png"
-                let s2 = "image_index_01.png"
-                let s3 = "image_01_index.png"
-                let s4 = "01_image.png"
+                let s1 = "image_01"
+                let s2 = "image_index_01"
+                let s3 = "image_01_index"
+                let s4 = "01_image"
                 
                 let n1 = "image_%zd"
                 let n2 = "image_index_%zd"
-                let n3 = "image_%zd_index.png"
-                let n4 = "%zd_image.png"
+                let n3 = "image_%zd_index"
+                let n4 = "%zd_image"
                 
-                try expect(s1.similarPatternWithNumberIndex(other: n1)) == true
-                try expect(s2.similarPatternWithNumberIndex(other: n2)) == true
-                try expect(s3.similarPatternWithNumberIndex(other: n3)) == true
-                try expect(s4.similarPatternWithNumberIndex(other: n4)) == true
+                try expect(n1.similarPatternWithNumberIndex(other: s1)) == true
+                try expect(n2.similarPatternWithNumberIndex(other: s2)) == true
+                try expect(n3.similarPatternWithNumberIndex(other: s3)) == true
+                try expect(n4.similarPatternWithNumberIndex(other: s4)) == true
                 
             }
             
