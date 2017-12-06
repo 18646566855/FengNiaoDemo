@@ -64,6 +64,8 @@ public func specFengNiaoKit() {
                 try expect(n3.similarPatternWithNumberIndex(other: s3)) == true
                 try expect(n4.similarPatternWithNumberIndex(other: s4)) == true
                 
+                print("111")
+                
             }
             
             
